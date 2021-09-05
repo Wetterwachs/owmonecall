@@ -59,7 +59,7 @@ type HourlyWeatherData struct {
 	Visibility  int                `json:"visibility"`
 	WindSpeed   float64            `json:"wind_speed"`
 	WindGust    float64            `json:"wind_gust"`
-	WindDegree  float64            `json:"wind_deg"`
+	WindDegree  int                `json:"wind_deg"`
 	Propability float64            `json:"pop"`
 	Rain        RainData           `json:"rain"`
 	Snow        SnowData           `json:"snow"`
@@ -96,7 +96,7 @@ type DailyWeatherData struct {
 	DewPoint    float64              `json:"dew_point"`
 	WindSpeed   float64              `json:"wind_speed"`
 	WindGust    float64              `json:"wind_gust"`
-	WindDegree  float64              `json:"wind_deg"`
+	WindDegree  int                  `json:"wind_deg"`
 	Clouds      int                  `json:"clouds"`
 	UVIndex     float64              `json:"uvi"`
 	Propability float64              `json:"pop"`
