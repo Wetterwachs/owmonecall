@@ -8,11 +8,11 @@ import (
 )
 
 type RainData struct {
-	1h float64 `json:"1h"`
+	OneHour float64 `json:"1h"`
 }
 
 type SnowData struct {
-	1h float64 `json:"1h"`
+	OneHour float64 `json:"1h"`
 }
 
 type ShortWeatherData struct {
