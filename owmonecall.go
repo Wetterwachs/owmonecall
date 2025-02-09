@@ -201,7 +201,7 @@ func (c *ConfigData) Configure(latitude float64, longitude float64, dataToGet st
 }
 
 func (c *ConfigData) GetURL() (url string) {
-	url = "https://api.openweathermap.org/data/2.5/onecall?"
+	url = "https://api.openweathermap.org/data/3.0/onecall?"
 	url += "lat=" + strconv.FormatFloat(c.Latitude, 'f', 2, 64)
 	url += "&lon=" + strconv.FormatFloat(c.Longitude, 'f', 2, 64)
 	excludes := c.Excludes.GetExclude()
